@@ -28,6 +28,8 @@
     "#Input the name of the raw data file before the in space below this cell\n",
     "input_filename = input()\n",
     "\n",
+    "election_year = input()\n",
+    "\n",
     "#Create a file name to save as\n",
     "output_filename = input()"
    ]
@@ -101,7 +103,7 @@
    "source": [
     "import re\n",
     "\n",
-    "dfall['Election Year'] = output_filename\n",
+    "dfall['Election Year'] = election_year\n",
     "\n",
     "#For general election from 2016-2018 use this list\n",
     "ey= ['Registered Voters','Election Day','Absentee by Mail', 'Advance in Person','Provisional','Total Votes']\n",
